@@ -1,0 +1,127 @@
+@import url(global.css);
+@import url(togger.css);
+@import url(responsivo.css);
+
+body{
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  text-align: center;
+  margin-top: 2.0rem;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & p{
+    text-transform: uppercase;
+    font: var(--overline);
+  }
+
+  & h1{
+   font: var(--display-md);
+   text-transform: uppercase;
+   color: var(--content-primary);
+  }
+}
+
+main{
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+  
+ & h2{
+  font: var(--label-lg);
+  color: var(--content-primary);
+  text-transform: uppercase;
+  padding-block:.5rem;
+ }
+
+ & p{
+  color: var(--content-tertiary);
+  font: var(--paragraph-md);
+ }
+}
+
+.input-form{
+  display: flex;
+  gap:12px ;
+  margin-bottom: 20px;
+}
+
+.input-form input{
+  width: 100%;
+  display: block;
+  background-color: var( --background-secondary);
+  border: none;
+  border-radius:8px ;
+  padding: 4px 8px;
+  font:var(--display-sm) ;
+  color: var(--content-primary);
+  text-align: center;
+}
+
+
+.input{
+  text-align: center;
+  text-transform: uppercase;
+  font: var(--label-md);
+  color: var(--content-secondary);
+
+  &:hover{
+    color: var( --background-brand);
+    & input{
+      background-color:var(--background-tertiary);
+    }
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+#button-sortear{
+  display: block;
+  width: 100%;
+  color: var(--content-primary);
+  font: var(--label-md);
+  background-color: var(--background-tertiary);
+  padding: 16px;
+  border: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem ;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  gap:.5rem ;
+
+  & img{
+    width: 20px;
+    height: 20px;
+  }
+
+  & h3{
+    font-size: var(--paragraph-md);
+    color: var(--content-brand);
+  }
+}
+
+
